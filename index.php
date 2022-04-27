@@ -25,3 +25,18 @@ function repeat(array $num){
 repeat([1,2,3]);
 
 echo '<br><br>';
+
+/*
+ * Task 2
+ */
+
+function reformat($text){
+	$vowels = array('a','e','i','o','u','A','E','I','O','U');
+	$cleaned = str_replace($vowels,"",$text);
+	$cleaned = strtolower($cleaned);
+	echo ucfirst($cleaned);
+}
+
+reformat("liMeSHArp DeveLoper TEST");
+
+echo '<br><br>';
